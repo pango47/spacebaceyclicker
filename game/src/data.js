@@ -1,7 +1,7 @@
 let ITEMS = [
     {
-        name: "Monkey",
-        description: "A monkey to help you press space. It doesn't really know what a <i>spacebar</i> is, so it will just bash the whole keyboard and eventually hit it. It succeeds every <b>%v seconds</b>.",
+        name: "Ariane",
+        description: "A monkey called Ariane to help you press space. It doesn't really know what a <i>spacebar</i> is, so it will just bash the whole keyboard and eventually hit it. It succeeds every <b>%v seconds</b>.",
         cost: 30,
         initial_value: .2,
         lvl: 0,
@@ -10,7 +10,7 @@ let ITEMS = [
         getDescription: (it) => it.description.replace("%v", 1.0 / it.initial_value),
     },
     {
-        name: "Boomer Mom",
+        name: "Boomer MMM",
         description: "A boomer mom who can't barely open a Word document to help you press it. Every mom can press it <b>%vx a second</b>!",
         cost: 120,
         initial_value: 3,
@@ -20,7 +20,7 @@ let ITEMS = [
         getDescription: (it) => it.description.replace("%v", nfmt(it.value)),
     },
     {
-        name: "Gen Z Kid",
+        name: "Slacker Pan",
         description: "A Generation Z kid will help you press it. They haven't ever seen a keyboard before, but they're good at scrolling short vertical videos online, so they do it <b>%vx a second</b>!",
         cost: 500,
         initial_value: 20,
